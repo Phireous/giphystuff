@@ -2,19 +2,19 @@ var search = ["mr rogers", "rick and morty"];
 
 function renderButtons() {
          
-$("#buttons").html("");
-          
-for (var i = 0; i < search.length; i++) {
+  $("#buttons").html("");
             
-var a = $("<button>");
-a.addClass("search");
-a.attr("data-name", search[i]);
-a.text(search[i]);
-            
-$("#buttons").append(a);          
-};
+  for (var i = 0; i < search.length; i++) {
+              
+    var a = $("<button>");
+    a.addClass("search");
+    a.attr("data-name", search[i]);
+    a.text(search[i]);
+                
+    $("#buttons").append(a);          
+  };
 
-$("button").on("click", function() {
+  $("button").on("click", function() {
   var query = $(this).attr("data-name");
 
   var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + query + "&api_key=dc6zaTOxFJmzC&limit=10";

@@ -11,4 +11,14 @@ button {
 h1 {
 	background: black;
 	color: white;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
+
+.sidebar {
+	border: solid black 1px;
+	padding-bottom: 15px;
+	width: 32%;
+}
+
